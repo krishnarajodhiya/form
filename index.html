@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap" rel="stylesheet">
+</head>
+<style>
+    
+    
+    body{
+        background-image: url(https://images.pexels.com/photos/158827/field-corn-air-frisch-158827.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+    h2 {
+        text-align: center;
+
+    }
+
+    #main {
+        background-color: rgba(233, 227, 227, 0);
+        border: 2px solid rgba(0, 0, 0, 0);
+        border-radius: 9px;
+        display: inline-block;
+        position: relative;
+        left: 15%;
+        padding: 10px;
+        padding-left: 20px;
+        padding-right: 523px;
+        padding-bottom: 50px;
+        margin: 30px;
+        margin-top: 50px;
+
+    }
+
+    .fom {
+       
+        margin: 10px;
+        width: 400px;
+        height: 50px;
+        font-size: 25px;
+    }
+
+    .contact {
+        margin: 30px;
+
+    }
+
+    #left {
+        height: 500px;
+        background-color: rgb(46, 46, 255);
+        border: 2px solid #00aaff;
+        color: aliceblue;
+        font-size: 15px;
+        position: absolute;
+        padding: 30px;
+        float: right;
+        left: 50%;
+        border-radius: 2%;
+        box-shadow: 5px 5px 5px 8px #00aaff;
+
+
+    }
+
+    #right {
+        border: 2px solid #d8dbdd;
+        background-color: #ffffff;
+        font-size: 18px;
+        border-radius: 2%;
+        position: relative;
+        padding: 30px;
+        padding-bottom: 100px;
+        float: left;
+        box-shadow: 5px 5px 5px 5px #d8dbdd;
+    }
+
+    #hh {
+        color: rgb(114, 113, 113);
+    }
+
+    #bu {
+        border: none;
+        border-radius: 10px;
+        color: white;
+        background-color: rgb(62, 62, 255);
+        font-size: 23px;
+    }
+
+    #bu:hover {
+        background-color: rgb(119, 119, 207);
+        padding: 3px;
+    }
+
+    .contact img {
+        filter: invert(100%);
+    }
+    H1{
+        color: #2b41e9;
+        text-align: center;
+        font-family: "Jersey 15", sans-serif;
+        font-size: 70px;
+    }
+</style>
+
+<body>
+    <h1>WORKING FORM</h1>
+    <div id="main">
+        <form action="https://api.web3forms.com/submit" method="POST">
+
+            <div id="right" class="div">
+
+                <h2 id="hh">Write Us</h2>
+                <input type="hidden" name="access_key" value="f17867ff-006f-466b-b778-99bed3b81420">
+                <input type="text" name="name" placeholder="First Name" id="1" class="fom"> <br>
+                <input type="email" name="email"  placeholder="Email" id="2" class="fom"><br>
+                <input type="number" name="number" placeholder="Mobile no" id="3" class="fom"><br>
+                <textarea name="massage" id="4" class="fom" cols="30" rows="10"
+                    placeholder="Your message Here....."></textarea><br>
+                <input type="submit" name="" id="bu">
+            </div>
+        </form>
+        <div id="left">
+            <h2>Contact Us</h2>
+            <div class="contact">
+                <pre><img src="location.png" width="30px" height="45px" alt="">   Address: Your Address Here</pre>
+            </div>
+            <div class="contact">
+                <pre><img src="telephone.png" width="30px" height="45px" alt="">  Phone: +91 9876543234</pre>
+            </div>
+            <div class="contact">
+                <pre><img src="email.png" width="30px" height="45px" alt="">  Email: krishnaformcenter@gmail.com </pre>
+            </div>
+            <div class="contact">
+                <pre><img src="web.png" width="30px" height="45px" alt="">  Website: www.formlelo.com</pre>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
