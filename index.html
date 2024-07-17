@@ -13,65 +13,77 @@
     
     
     body{
-        background-image: url(https://images.pexels.com/photos/158827/field-corn-air-frisch-158827.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
-        background-repeat: no-repeat;
-        background-size: cover;
+        background: #f6f5f7;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: 'Montserrat', sans-serif;
+	height: 100vh;
+	margin: -20px 0 50px;
         
     }
-    h2 {
-        text-align: center;
-
+    h1 {
+        font-weight: bold;
+        margin: 0;
     }
 
     #main {
-        background-color: rgba(233, 227, 227, 0);
-        border: 2px solid rgba(0, 0, 0, 0);
-        border-radius: 9px;
-        display: inline-block;
-        position: relative;
-        left: 15%;
-        padding: 10px;
-        padding-left: 20px;
-        padding-right: 523px;
-        padding-bottom: 50px;
-        margin: 30px;
-        margin-top: 50px;
+        background-color: #fff;
+	border-radius: 10px;
+  	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+			0 10px 10px rgba(235, 58, 58, 0.22);
+	position: relative;
+	overflow: hidden;
+	width: 768px;
+	max-width: 100%;
+	min-height: 480px;
 
     }
 
     .fom {
        
-        margin: 10px;
-        width: 400px;
-        height: 50px;
-        font-size: 25px;
+        margin:19px;
+        max-width: 400px;
+        max-height: 50px;
+       font-size: large;
     }
 
     .contact {
-        margin: 30px;
+        left: 0;
+	width: 50%;
+	z-index: 2;
+       
 
     }
 
     #left {
         height: 500px;
-        background-color: rgb(46, 46, 255);
-        border: 2px solid #00aaff;
+        background-color:#FF4B2B;
+        border: 2px solid#f9310d;
         color: aliceblue;
-        font-size: 15px;
+        max-width: 414px;
+        max-height: 896px;
+       
         position: absolute;
         padding: 30px;
         float: right;
         left: 50%;
         border-radius: 2%;
-        box-shadow: 5px 5px 5px 8px #00aaff;
+        box-shadow: 5px 5px 5px 8px #FF4B2B;
 
 
+    }
+    input{
+       font-size: 10px;
     }
 
     #right {
         border: 2px solid #d8dbdd;
         background-color: #ffffff;
-        font-size: 18px;
+        max-width: 414px;
+        max-height: 896px;
+   
         border-radius: 2%;
         position: relative;
         padding: 30px;
@@ -81,27 +93,35 @@
     }
 
     #hh {
-        color: rgb(114, 113, 113);
+        color: rgb(0, 0, 0);
     }
 
     #bu {
         border: none;
-        border-radius: 10px;
+        border-radius: 4px;
         color: white;
-        background-color: rgb(62, 62, 255);
-        font-size: 23px;
+        background-color: #FF4B2B; /*button*/
+       font-size: 20px;
+        padding: 5px;
+    }
+    span{
+        justify-content: center;
+        align-items: center;
+        position:relative;
+        left: 100px;
+        top: 20px;
     }
 
     #bu:hover {
         background-color: rgb(119, 119, 207);
-        padding: 3px;
+        
     }
 
     .contact img {
         filter: invert(100%);
     }
     H1{
-        color: #2b41e9;
+        color: #FF4B2B;
         text-align: center;
         font-family: "Jersey 15", sans-serif;
         font-size: 70px;
@@ -122,8 +142,8 @@
                 <input type="number" name="number" placeholder="Mobile no" id="3" class="fom"><br>
                 <textarea name="massage" id="4" class="fom" cols="30" rows="10"
                     placeholder="Your message Here....."></textarea><br>
-                <input type="submit" name="" id="bu">
-            </div>
+                    <span><input type="submit" name="" id="bu"></span> 
+                </div>
         </form>
         <div id="left">
             <h2>Contact Us</h2>
